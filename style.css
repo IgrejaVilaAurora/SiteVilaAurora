@@ -1,0 +1,109 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Estilo do Header */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-image: linear-gradient(rgba(128, 128, 128, 0.418),white);
+    padding: 20px;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Logo da Igreja */
+header .logo {
+    margin-left: 20px;
+}
+
+header .logo img {
+    width: 100px;
+    height: 90px;
+}
+
+/* Estilo da Navegação */
+header nav {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+}
+
+header nav ul {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+header nav ul li {
+    display: inline-block;
+    padding: 0 20px;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: rgb(10, 10, 10);
+    display: inline-block;
+    padding: 10px 15px;
+    transition: color 0.2s, transform 0.2s;
+}
+
+header nav ul li a:hover {
+    transform: scale(1.05);
+    color: rgb(104, 104, 104);
+}
+
+/* Estilo do Botão */
+.button {
+    margin-right: 20px;
+}
+
+.button button {
+    background-color: #292725;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.button button:hover {
+    background-color: rgb(131, 128, 128);
+    transform: scale(1.05);
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+}
+
+.button button:active {
+    transform: scale(0.98);
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Adicionando espaço abaixo do header para o conteúdo não ficar escondido */
+body {
+    padding-top: 130px; /* Ajuste conforme a altura do header */
+}
+
+/* Centralizando a Introdução e Outros Conteúdos */
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    min-height: 100vh;
+    padding: 20px;
+}
