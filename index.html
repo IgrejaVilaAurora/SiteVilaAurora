@@ -15,9 +15,10 @@
         </div>
         <nav class="menu-desktop">
             <ul>
-                <li><a href="#introduction">Intrudução</a></li>
+                <li><a href="#Intrudução">Intrudução</a></li>
                 <li><a href="#Programação">Programação</a></li>
                 <li><a href="#about">Sobre </a></li>
+                <li><a href="#Noticias">Noticias</a></li>
                 <li><a href="#Localização">Localização</a></li>
                 
             </ul>
@@ -27,7 +28,7 @@
    </header>
    
    <main>
-       <div class="fundo"></div>
+       <div class="fundo" id="Intrudução"></div>
        <div id="introduction">
            <h1>Bem-vindo à nossa Igreja</h1>
            <p>Estamos felizes em tê-lo aqui!</p>
@@ -39,42 +40,112 @@
                 <h3>Terça-Feira</h3>
                     <div>
                   <ul>
-                    <li>19:30 - Estudo Bíblico</li>
+                    <li>Estudo Bíblico - 19:30 às 21:00 </li>
                  </ul>
+                 <p class="descricao-horarios">
+                    Participe dos nossos estudos bíblicos e aprofunde seu conhecimento das Escrituras. Os estudos são conduzidos pelo Pastor Marcos, com reflexões e ensinamentos para o seu crescimento espiritual.
+                 </p>
                 </div>
                 
             </div>
             <div class="DiasDeCulto">
                 <h3>Quinta-Feira</h3>
                 <ul>
-                    <li>19:30 - Culto de Louvor</li>
+                    <li>Culto de Louvor 19:30 às 21:00</li>
                 </ul>
+                <p class="descricao-horarios">Venha adorar conosco em um ambiente de fé, louvor e comunhão. Nossos cultos de adoração são uma oportunidade para se conectar com Deus e com a comunidade. Esperamos você!</p>
             </div>
-            <div class="DiasDeCulto">
+            <div class="DiasDeCulto-abaixo">
                 <h3>Sexta-Feira</h3>
                 <ul>
-                    <li>19:00 - Culto de Oração</li>
-                   
+                    <li> Culto de Oração - 19:00 às 20:00 </li>
                 </ul>
+                <p class="descricao-horarios">Junte-se a nós para momentos de oração e intercessão, fortalecendo nossa fé e buscando a presença de Deus em comunidade.</p>
+
             </div>
-            <div class="DiasDeCulto">
+            <div class="DiasDeCulto-abaixo">
                 <h3>Domingo</h3>
                 <ul>
                     <li>09:00  - Escola Dominical</li>
                     <div class="linha">_</div>
-                    <li>18:00 - Culto de Celebração</li>
+                    <li>Culto Das 18:00 às 21:00 </li>
                     <!-- Programações especiais -->
-                    <li>1º Domingo do Mês: Culto com as Irmãs</li>
-                    <li>2º Domingo do Mês: Culto de Jovens</li>
-                    <li>3º Domingo do Mês: Culto da Família</li>
-                    <li>4º Domingo do Mês: Culto de Missões</li>
+                    <li>1ºDomingo do Mês: Culto com as Irmãs </li>
+                    <li>2º Domingo do Mês: Culto de  Missões</li>
+                    <li>3º Domingo do Mês: Culto da Jovens </li>
+                    <li>4º Domingo do Mês: Culto de Família</li>
                     <!-- Adicione mais conforme necessário -->
 
                     <!--Colocar uma descriçao nos cultos-->
                 </ul>
+                
             </div>
+            
         </div>
     </section>
+
+    <div id="about"></div>
+    <section  id="historia">
+        
+        <h1 style="font-size: 35px; margin-bottom: 20px; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;" >Historia da Igreja </h1>
+       <div class="Sobre-conteudo" id="Sobre">
+        <h2>Fundação</h2>
+        <p>A Igreja [Nome da Igreja] foi fundada em [Ano de Fundação] por [Nome do Fundador]. A ideia surgiu de [Contexto da Fundação], e o objetivo era [Objetivo Inicial]. Desde sua fundação, a Igreja tem sido um pilar de [Descrição do Papel da Igreja na Comunidade].</p>
+        
+        <h2>Desenvolvimento</h2>
+        <p>Nos primeiros anos, a Igreja enfrentou [Desafios Iniciais] e conquistou [Primeiras Conquistas]. Com o tempo, [Nome do Líder ou Congregação] assumiu a liderança e ajudou a expandir a Igreja através de [Iniciativas de Crescimento].</p>
+        
+        <h2>Marcos Importantes</h2>
+        <ul>
+            <li>[Ano] - [Marcos Importantes, por exemplo, construção de um novo templo, eventos significativos, etc.]</li>
+            <li>[Ano] - [Outro Marco Importante]</li>
+            <!-- Adicione mais marcos conforme necessário -->
+        </ul>
+
+        <h2>Legado e Futuro</h2>
+        <p>Hoje, a Igreja [Nome da Igreja] continua a [Missão Atual] e mantém um compromisso com [Aspectos Importantes do Legado]. O futuro da Igreja é prometedor com [Planos Futuros ou Metas].</p>
+
+
+        <h2>Curiosidades</h2>
+        <p>Hoje, a Igreja [Nome da Igreja] continua a [Missão Atual] e mantém um compromisso com [Aspectos Importantes do Legado]. O futuro da Igreja é prometedor com [Planos Futuros ou Metas].</p>
+
+            
+
+
+
+       </div> 
+    </section>
+    <div class="Noticias" id="Noticias">
+    <div class="container">
+        <!-- Botões para navegar pelas abas -->
+        <button class="prev" onclick="moverAbas(-1)">❮</button>
+        <button class="next" onclick="moverAbas(1)">❯</button>
+
+        <!-- Div para as abas -->
+        <div class="abas">
+            <div class="aba" id="aba1">
+                <div class="aba-texto"><h2>Aula de Música</h2>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod corrupti sed dolor consectetur deserunt, id incidunt, aliquid veniam accusantium ducimus et perferendis dolorum? Dolores, soluta earum. Obcaecati distinctio aperiam ipsa.
+                </div>
+            </div>
+
+            <div class="aba" id="aba2">
+                <div class="aba-texto"><h2>Construção da Igreja</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reprehenderit alias aperiam culpa error maiores sit asperiores fuga tenetur maxime totam illum quis voluptatibus sint quidem vitae, quisquam illo! Repellat, odit.</p>
+                </div>
+            </div>
+
+            <div class="aba" id="aba3">
+                <div class="aba-texto"> <h2>Santa Ceia</h2> 
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem est quae nesciunt itaque inventore mollitia necessitatibus possimus unde, repudiandae illum beatae maxime ipsum impedit laborum sequi commodi accusantium iste ipsa.</p>
+                    
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
    </main>
    <script src="Codigo.js"></script>
 </body>
