@@ -24,3 +24,4 @@ function moverAbas(direcao) {
     const container = document.querySelector('.abas');
     container.style.transform = `translateX(-${indiceAtual * larguraAba}px)`;
 }
+
