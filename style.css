@@ -646,7 +646,7 @@ body {
     /* Introdução */
     .fundo {
         height: 40vh;
-        width: 110%;
+        width: 100%;
         background-position: center center;
         z-index: 10000;
         height: 40vh;
@@ -720,7 +720,7 @@ body {
     }
 
     /* Seção História da Igreja */
-
+    
     #historia {
         padding-top: 200px;
         padding: 30px 10px;
