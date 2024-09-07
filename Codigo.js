@@ -6,7 +6,7 @@ document.getElementById('Butao-contato').addEventListener('click',function(){
 
 // Sobre
 
-let indiceAtual = 0; // Índice da aba atual
+let indiceAtual = 0; 
 
 function moverAbas(direcao) {
     const abas = document.querySelectorAll('.aba');
@@ -15,9 +15,9 @@ function moverAbas(direcao) {
     indiceAtual += direcao;
 
     if (indiceAtual >= totalAbas) {
-        indiceAtual = 0; // Se chegar ao fim, volta ao início
+        indiceAtual = 0; 
     } else if (indiceAtual < 0) {
-        indiceAtual = totalAbas - 1; // Se voltar no início, vai ao final
+        indiceAtual = totalAbas - 1; 
     }
 
     const larguraAba = abas[0].clientWidth;
